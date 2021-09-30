@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik:wght@300;400;500;700&display=swap');
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Rubik', sans-serif;
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1108px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
