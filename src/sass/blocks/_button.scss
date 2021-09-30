@@ -1,0 +1,35 @@
+.btn {
+    width: 158px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: $main-color;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s all;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
+}
+
+.btn_220 {
+    width: 220px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: $main-color;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s all;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
+}
