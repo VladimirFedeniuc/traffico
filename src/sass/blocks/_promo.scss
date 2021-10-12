@@ -1,15 +1,16 @@
 .promo {
+    padding-top: 50px;
     &__img {
         position: absolute;
         left: -49px;
         top: -54px;
-        z-index: -10;
+        z-index: -1;
+        background-color: $second-color;
     }
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 50px;
     }
     &__logo {
         width: 212px;

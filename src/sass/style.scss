@@ -14,7 +14,7 @@
 }
 
 .container {
-    width: 1108px;
+    width: 1120px;
     margin: 0 auto;
 }
 
@@ -24,3 +24,6 @@ p {
 
 @import 'blocks/button';
 @import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/faq';
+@import 'blocks/carousel';

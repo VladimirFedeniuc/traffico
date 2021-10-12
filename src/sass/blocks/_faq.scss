@@ -1,0 +1,156 @@
+.faq {
+    position: relative;
+    width: 100%;
+    background-color: $second-color;
+    &__img {
+        position: absolute;
+        z-index: 3;
+        top: 101px;
+        right: 177px;
+        width: 708px;
+        height: 497px;
+        img {
+            width: 100%;
+        }
+    }
+    &__background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 1170px;
+        height: 1500px;
+        background: #FDEDE8;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        border-top-right-radius: 15%;
+    }
+    &__subheader {
+        position: relative;
+        z-index: 3;
+        padding-top: 222px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        color: $main-color;
+    }
+    &__header {
+        position: relative;
+        z-index: 3;
+        padding-top: 44px;
+        width: 505px;
+        font-family: DM Serif Display;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 67px;
+        color: #402B2B;
+        
+    }
+
+    .accordion {
+        margin-top: 170px;
+        display: grid;
+        grid-template-columns: 550px 550px;
+        column-gap: 20px;
+        &-item {
+            margin-top: 10px;
+            transition: 0.9s all;
+            position: relative;
+            z-index: 3;
+            &__head {
+                width: 550px;
+                min-height: 90px;
+                background: #FFFFFF;
+                box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                color: #402B2B;
+                border: none;
+                outline: none;
+                text-align: left;
+                padding: 0 35px 0 35px;
+                transition: .6s all;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:active , &:focus {
+                    outline: none !important;
+                }
+                &:after {
+                    content: url('../../icons/plus.svg');
+                    color: $main-color;
+                    margin-left: 35px;
+    
+                }
+                &:hover {
+                    box-shadow: 3px 3px 20px $main-color;
+                    border: none;
+                }
+            }
+            .active {
+                &:after {
+                    transition: 0.5s all;
+                    content: url('../../icons/minus.svg');
+                }
+            }
+            &__body {
+                position: relative;
+                z-index: -1;
+                width: 550px;
+                min-height: 160px;
+                background: #FFF7F5;
+                box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+                border-radius: 10px;
+                display: none;
+                overflow: hidden;
+                margin-bottom: 50px;
+                transition: 0.5s all;
+                p {
+                    padding: 40px 35px 35px 35px;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #402B2B;
+                    transition: 0.5s all;
+                }
+            }
+        }
+        &__button {
+            display: flex;
+            justify-content: flex-end;
+            button {
+                margin-top: 23px;
+                width: 550px;
+                height: 90px;
+                background: rgba(237, 77, 71, 0.2);
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 35px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.05em;
+                transition: .3s all;
+    
+                color: $main-color;
+                &:hover {
+                    box-shadow: 3px 3px 20px $main-color;
+                    border: none;
+                }
+    
+                &:active , &:focus {
+                    outline: none !important;
+                }
+                svg {
+                    margin-left: 164px;
+                }
+    
+            }
+        }
+    }
+}

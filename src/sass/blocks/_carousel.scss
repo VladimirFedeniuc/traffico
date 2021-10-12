@@ -1,0 +1,89 @@
+.carousel {
+    padding-top: 414px;
+    background-color: $second-color;
+    position: relative;
+    padding-bottom: 160px;
+    &__subheader {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        color: $main-color;
+    }
+    &__header {
+        padding-top: 44px;
+        width: 295px;
+        font-family: DM Serif Display;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 67px;
+        color: #402B2B;
+        float: left;
+        margin-right: 66px;
+    }
+}
+
+.slider {
+    .slick-list {
+        // padding-left: 10px;
+        padding-bottom: 50px;
+    }
+    .slider-item {
+        width: 420px;
+        min-height: 360px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+        border-radius: 10px;
+        margin: 15px 10px;
+        display: grid;
+        align-content: space-between;
+        &__text {
+            padding: 60px 50px 0px 50px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 30px;
+            color: #402B2B;
+        }
+        &__info {
+            display: flex;
+            align-items: center;
+            margin: 0 0 40px 50px;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+            }
+        }
+        &__name {
+            padding-left: 20px;
+        }
+    }
+    .slick-prev {
+        position: absolute;
+        top: -60px;
+        transform: translateY(-60%);
+        right: 300px;
+        border: none;
+        background-color: $second-color;
+        img {
+            width: 100%;
+        }
+        &:active , &:focus {
+            outline: none !important;
+        }
+    }
+    .slick-next {
+        position: absolute;
+        top: -60px;
+        transform: translateY(-60%);
+        right: 240px;
+        border: none;
+        background-color: $second-color;
+        img {
+            width: 100%;
+        }
+        &:active , &:focus {
+            outline: none !important;
+        }
+    }
+}
