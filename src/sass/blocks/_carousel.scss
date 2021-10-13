@@ -1,5 +1,6 @@
 .carousel {
     padding-top: 414px;
+    padding-bottom: 160px;
     background-color: $second-color;
     position: relative;
     padding-bottom: 160px;
@@ -24,8 +25,11 @@
 }
 
 .slider {
+    // width: 1300px;
+    // display: grid;
+    // justify-content: flex-end;
     .slick-list {
-        // padding-left: 10px;
+        // padding-left: 20px;
         padding-bottom: 50px;
     }
     .slider-item {
@@ -34,7 +38,7 @@
         background: #FFFFFF;
         box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
         border-radius: 10px;
-        margin: 15px 10px;
+        margin: 0 10px;
         display: grid;
         align-content: space-between;
         &__text {

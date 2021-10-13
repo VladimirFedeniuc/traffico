@@ -12,6 +12,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: $second-color;
+}
 
 .container {
     width: 1120px;
@@ -27,3 +30,5 @@ p {
 @import 'blocks/about';
 @import 'blocks/faq';
 @import 'blocks/carousel';
+@import 'blocks/feed';
+@import 'blocks/footer';

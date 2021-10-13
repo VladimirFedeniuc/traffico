@@ -34,6 +34,9 @@
     border-radius: 5px;
     border: none;
     transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
         box-shadow: 3px 3px 20px $main-color;
         border: none;
@@ -43,5 +46,8 @@
         &:hover {
             text-decoration: none;
         }
+    }
+    svg {
+        margin-left: 24px;
     }
 }
