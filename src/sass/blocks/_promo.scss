@@ -4,7 +4,7 @@
     // background: url(../img/header/illustration.svg) right (center/cover) no-repeat;
     background: url(../img/header/illustration.svg) no-repeat 50%/cover;
     min-height: 1100px;
-    &__wrapper {
+    .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -16,32 +16,45 @@
         }
     }
     .menu {
-        width: 604px;
         display: flex;
         align-items: center;
+        align-content: center;
         justify-content: space-between;
-        ul {
+        width: 604px;
+        &__close {
+            display: none;
+        }
+        &__block {
+            display: flex;
+            align-items: center;
+            .btn {
+                margin-left: 76px;
+            }
+        }
+        &__list {
+            width: 370px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 370px;
-        }
-        li {
-            list-style-type: none;
-            
-            a {
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 19px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                transition: 0.3s all;
-                &:hover {
-                    color: $main-color;
-                    text-decoration: none;
+            li {
+                list-style-type: none;
+                a {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    transition: 0.3s all;
+                    &:hover {
+                        color: $main-color;
+                        text-decoration: none;
+                    }
                 }
             }
+        }
+        ul {
+            margin-bottom: 0;
         }
         .social {
             display: none;
@@ -55,6 +68,7 @@
         color: #FFFFFF;
         width: 741px;
         margin-top: 90px;
+        margin-bottom: 0;
     }
     .btn_220 {
         margin-top: 60px;
