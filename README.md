@@ -4,14 +4,14 @@
 
 ## Используемые технологии:
 ### Основные технологии:
-*HTML
-*SCSS
-*JS
-*Jquery
-*PHP
-*GULP
-*GIT
-*FIGMA
+..*HTML
+..*SCSS
+..*JS
+..*Jquery
+..*PHP
+..*GULP
+..*GIT
+..*FIGMA
 ### Дополнительные технологии:
 *GULP
    1. Browser-sync
