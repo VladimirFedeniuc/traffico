@@ -5,15 +5,15 @@
 ## Используемые технологии:
 ### Основные технологии:
 + HTML
--SCSS
--JS
-..*Jquery
-..*PHP
-..*GULP
-..*GIT
-..*FIGMA
++SCSS
++JS
++Jquery
++PHP
++GULP
++GIT
++FIGMA
 ### Дополнительные технологии:
-*GULP
++GULP
    1. Browser-sync
    2. SASS - css
    3. Clean CSS
@@ -21,17 +21,17 @@
    5. Rename
    6. Imagemin
    7. HTMLmin
-*Gitignore
-*Slick slider
-*Animate
-*Wow.js
-*Page up
-*Jquery validate
-*PHP - mailer
-*Bootstrap reboot
-*SCSS - mixins, variables
++Gitignore
++Slick slider
++Animate
++Wow.js
++Page up
++Jquery validate
++PHP - mailer
++Bootstrap reboot
++SCSS - mixins, variables
 ### Сервисы:
-*Google Fonts
-*Favicon generator
-*Meta tegs
-*SVG Crop
++Web Fonts
++Favicon generator
++Meta tegs
++SVG Crop
