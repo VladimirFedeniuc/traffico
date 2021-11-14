@@ -42,3 +42,80 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+// Validate form
+function validateForms(form){
+  $(form).validate({
+    rules: {
+      name: "required",
+      email: "required"
+    },
+    messages: {
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
+  });
+};
+
+
+validateForms('#4');
+validateForms('#consultation form');
+// $('.feed-form').validate({
+//   rules: {
+//     name: "required",
+//     email: "required"
+//   },
+//   messages: {
+//     name: "Please specify your name",
+//     email: {
+//       required: "We need your email address to contact you",
+//       email: "Your email address must be in the format of name@domain.com"
+//     }
+//   }
+// });
+
+// Modal
+$('[data-modal=consultation]').on('click', function() {
+  $('.overlay, #consultation').fadeIn('slow');
+});
+$('.modal__close').on('click', function() {
+  $('.overlay, #consultation, #thanks').fadeOut('slow');
+});
+
+// Wow.js - animate
+new WOW().init();
+
+// PHP mailer
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+  });
+  return false;
+});
+
+// Page up
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+  } else {
+      $('.pageup').fadeOut();
+  }
+});
+
+$("a[href]").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});

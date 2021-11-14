@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffico</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Trafico</title>
+    <meta name="title" content="Trafico">
+    <meta name="description" content="Your awesome traffic permit consultant.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Trafico">
+    <meta property="og:description" content="Your awesome traffic permit consultant.">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Trafico">
+    <meta property="twitter:description" content="Your awesome traffic permit consultant.">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <div class="promo" id="promo">
         <div class="container">
             <header class="header" >
-                <a href="#">
+                <a href="#promo">
                     <img src="icons/logo.svg" alt="logo" class="promo__logo">
                 </a>
                 <div class="hamburger">
@@ -28,9 +57,9 @@
                         </div>
                         <nav>
                             <ul class="menu__list">
-                                <li class="menu__item"><a href="#">ABOUT</a></li>
-                                <li class="menu__item"><a href="#">HOW TO</a></li>
-                                <li class="menu__item"><a href="#">FAQS</a></li>
+                                <li class="menu__item"><a href="#about">ABOUT</a></li>
+                                <li class="menu__item"><a href="#how-to">HOW TO</a></li>
+                                <li class="menu__item"><a href="#faq">FAQS</a></li>
                             </ul>
                         </nav>
                         <div class="social">
@@ -44,18 +73,18 @@
                                 <img src="icons/social/instagram.svg" alt="instagram">
                             </a>
                         </div>
-                        <button class="btn">CONTACT US</button>
+                        <button data-modal="consultation" class="btn animate__animated animate__pulse wow">CONTACT US</button>
                     </div>
                     <div class="menu__overlay"></div>
                 </div>
             </header>
-            <h1 class="promo__header">Your awesome traffic permit consultant.</h1>
-            <button class="btn btn_220">GET STARTED<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.8885 12.355L29.5 6.17749L28.5 5.07664V5.0039H28.4339L23.8885 0L22.4086 1.3464L25.731 5.0039L0 5.0039L0 7.0039L26.0464 7.0039L22.4086 11.0086L23.8885 12.355Z" fill="white"/></svg></button>
-            <img src="img/header/track_model.svg" alt="track" class="promo__model">
+            <h1 class="promo__header animate__animated animate__bounceIn wow">Your awesome traffic permit consultant.</h1>
+            <button data-modal="consultation" class="btn btn_220">GET STARTED<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.8885 12.355L29.5 6.17749L28.5 5.07664V5.0039H28.4339L23.8885 0L22.4086 1.3464L25.731 5.0039L0 5.0039L0 7.0039L26.0464 7.0039L22.4086 11.0086L23.8885 12.355Z" fill="white"/></svg></button>
+            <img src="img/header/track_model.svg" alt="track" class="promo__model animate__animated animate__bounceInLeft wow">
         </div>
     </div>
     
-    <section class="about">
+    <section class="about animate__animated animate__fadeInUpBig wow" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__text">
@@ -68,7 +97,7 @@
                 </div>
                 <img src="img/about_us.svg" alt="about_us" class="about__img">
             </div>
-            <div class="about__wrapper">
+            <div class="about__wrapper" id="how-to">
                 <div class="about__text">
                     <h3 class="about__title about__title_top">How to apply</h3>
                     <p class="about__descr">When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.</p>
@@ -78,7 +107,7 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="faq animate__animated animate__fadeInUpBig wow" id="faq">
         <div class="container">
             <img src="img/faq/faq.svg" alt="faq" class="faq__img">
             <div class="faq__background"></div>
@@ -86,32 +115,32 @@
             <h2 class="faq__header">Questions and Answers on Professional Traffic Permits:</h2>
             <div class="accordion">
                 <div class="accordion__wrapper">
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInLeft wow">
                         <button class="accordion-item__head">What is a professional traffic permit?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInLeft wow">
                         <button class="accordion-item__head">
                             How to check the traffic condition?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInLeft wow">
                         <button class="accordion-item__head">What are the requirements for a professional traffic permit?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInLeft wow">
                         <button class="accordion-item__head">Are there professional traffic permit training courses at a distance?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInLeft wow">
                         <button class="accordion-item__head">When is a professional traffic permit needed?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
@@ -119,31 +148,31 @@
                     </div>
                 </div>
                 <div class="accordion__wrapper">
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInRight wow">
                         <button class="accordion-item__head">Where to look for a traffic permit?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInRight wow">
                         <button class="accordion-item__head">Are there differences between a traffic permit and a professional traffic permit?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInRight wow">
                         <button class="accordion-item__head">How much does a commercial traffic permit cost for goods?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInRight wow">
                         <button class="accordion-item__head">How to plug in for the traffic permit test?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item animate__animated animate__zoomInRight wow">
                         <button class="accordion-item__head">How is the sample for a professional traffic permit booked?</button>
                         <div class="accordion-item__body">
                             <p>Traffic permits are a requirement for conducting professional traffic.</p>
@@ -161,7 +190,7 @@
         </div>
     </section>
     
-    <section class="carousel">
+    <section class="carousel animate__animated animate__fadeInUpBig wow">
         <div class="container">
             <div class="carousel__subheader">ABOUT US</div>
             <h2 class="carousel__header">Out Awesome Clients</h2>
@@ -212,32 +241,32 @@
             </div>
     </section>
 
-    <section class="feed" >
+    <div class="feed">
         <div class="container">
-            <img src="img/footer/truck_model.svg" alt="truck" class="feed__truck">
+            <img src="img/footer/truck_model.svg" alt="truck" class="feed__truck animate__animated animate__bounceInLeft wow">
             <!-- <img src="img/footer/main_bg.svg" alt="background" class="feed__bg"> -->
             <div class="feed__wrapper">
                 <div class="feed__info">
                     <p class="feed__info-text">We provide traffic management consultants so you get started quickly, contact us for a quote today!</p>
                 </div>
-                <form action="#" class="feed-form">
+                <form action="#" class="feed-form" id="feed-form">
                     <label for="name">Name</label>
-                    <input required name="name" id="name" placeholder="Your name" type="text">
+                    <input name="name" id="name" placeholder="Your name" type="text">
                     <label for="email">Email address</label>
-                    <input required name="email" id="email" placeholder="Your email address" type="text">
+                    <input name="email" id="email" placeholder="Your email address" type="text">
                     <button class="btn btn_220">GET STARTED<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.8885 12.355L29.5 6.17749L28.5 5.07664V5.0039H28.4339L23.8885 0L22.4086 1.3464L25.731 5.0039L0 5.0039L0 7.0039L26.0464 7.0039L22.4086 11.0086L23.8885 12.355Z" fill="white"/>
                     </svg></button>
                 </form>
             </div>
             <div class="feed__menu">
-                <a href="#">
+                <a href="#promo">
                     <img src="icons/logo.svg" alt="logo" class="feed__menu-logo">
                 </a>
                 <menu class="feed__menu-list">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">HOW TO</a></li>
-                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#how-to">HOW TO</a></li>
+                    <li><a href="#faq">FAQS</a></li>
                 </menu>
             </div>
         </div>
@@ -245,7 +274,7 @@
             <img src="img/footer/lines.png" alt="lines" class="feed__bg-over">
             <div class="feed__bg-under"></div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <div class="container">
@@ -265,9 +294,36 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>           
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <h3 class="modal__title">Contact us for a quote today!</h3>
+            <form action="#" class="modal-form">
+                <label for="name">Name</label>
+                <input name="name" id="modal-name" placeholder="Your name" type="text">
+                <label for="email">Email address</label>
+                <input name="email" id="modal-email" placeholder="Your email address" type="text">
+                <button class="btn btn_220">GET STARTED<svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.8885 12.355L29.5 6.17749L28.5 5.07664V5.0039H28.4339L23.8885 0L22.4086 1.3464L25.731 5.0039L0 5.0039L0 7.0039L26.0464 7.0039L22.4086 11.0086L23.8885 12.355Z" fill="white"/>
+                </svg></button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Thanks for your application!</div>
+            <div class="modal__descr">Our consultant will contact you shortly!</div>
+        </div>
+    </div>
+
+    <a href="#promo" class="pageup">
+        <img src="icons/arrow_up.svg" alt="arrow">
+    </a>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>   
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>  
     <script src="js/script.js"></script>
 </body>
 </html>

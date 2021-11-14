@@ -1,3 +1,10 @@
+@media (max-width: 1439px) {
+    .feed {
+        &__bg-under {
+            width: 1200px;
+        }
+    }
+}
 @media (max-width: 1200px) {
     .container {
         width: 960px;
@@ -49,12 +56,12 @@
         }
     }
     .feed {
-        min-height: 690px;
+        min-height: 770px;
         &__bg {
             width: 100%;
             &-under {
                 width: 100%;
-                height: 520px;
+                height: 600px;
             }
         }
         &__truck {
@@ -186,13 +193,13 @@
     }
     .feed {
         padding-top: 40px;
-        min-height: 590px;
+        min-height: 690px;
         &__bg {
             &-over {
                 width: 510px;
             }
             &-under {
-                height: 420px;
+                height: 520px;
             }
         }
         &__truck {
@@ -202,11 +209,12 @@
         &__wrapper {
             grid-template-columns: 260px 400px;
             column-gap: 20px;
-            .feed-form {
+            .feed-form  {
                 padding: 32px 25px;
                 input {
                     font-size: 16px;
-                    width: 340px;
+                    // width: 340px;
+                    width: 100%;
                     padding: 11px 20px;
                 }
             }
@@ -230,6 +238,19 @@
                     a {
                         font-size: 14px;
                     }
+                }
+            }
+        }
+    }
+    .overlay {
+        .modal {
+            width: 450px;
+            padding: 32px 25px;
+            &-form  {
+                input {
+                    font-size: 16px;
+                    width: 340px;
+                    padding: 11px 20px;
                 }
             }
         }
@@ -288,12 +309,13 @@
             }
             .menu {
                 position: fixed;
+                z-index: 100;
                 visibility: hidden;
                 opacity: 0;
                 left: -100%;
                 transition: all .6s;
                 &__block {
-                    z-index: 10;
+                    z-index: 100;
                     position: fixed;
                     top: 0;
                     width: 50%;
@@ -334,7 +356,7 @@
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    bottom: 50px;
+                    bottom: 100px;
                     a {
                         display: flex;
                         justify-content: center;
@@ -432,7 +454,7 @@
         }
     }
     .feed {
-        min-height: 970px;
+        min-height: 1070px;
         &__bg {
             &-over {
                 width: 320px;
@@ -440,7 +462,7 @@
                 left: 60px;
             }
             &-under {
-                min-height: 800px;
+                height: 900px;
             }
         }
         &__truck {
@@ -451,11 +473,10 @@
             display: flex;
             flex-direction: column-reverse;
             .feed-form {
-                width: 450px;
+                width: 400px;
                 margin: 250px auto 0 auto;
                 padding: 32px 25px;
                 input {
-                    width: 340px;
                     padding: 11px 20px;
                 }
             }
@@ -474,6 +495,19 @@
         }
         &__menu {
             display: none;
+        }
+    }
+    .overlay {
+        .modal {
+            width: 450px;
+            .feed-form  {
+                padding: 32px 25px;
+                input {
+                    font-size: 16px;
+                    width: 100%;
+                    padding: 11px 20px;
+                }
+            }
         }
     }
 }
@@ -607,6 +641,7 @@
         }
     }
     .feed {
+        min-height: 1090px;
         &__bg {
             &-over {
                 width: 100%;
@@ -614,7 +649,7 @@
                 left: 0;
             }
             &-under {
-                height: 800px;
+                height: 920px;
                 border-top-right-radius: 100px;
             }
         }
@@ -646,6 +681,30 @@
         .footer {
             flex-direction: column-reverse;
             justify-content: space-evenly;
+        }
+    }
+    .overlay {
+        .modal {
+            // width: 290px;
+            width: 90%;
+            // min-height: 324px;
+            &__close {
+                right: 0;
+                top: -45px;
+            }
+            &-form {
+                input {
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 11px 20px;
+                }
+                label {
+                    font-size: 14px;
+                }
+            }
+            &__title {
+                font-size: 16px;
+            }
         }
     }
 }
